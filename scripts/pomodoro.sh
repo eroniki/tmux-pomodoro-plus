@@ -35,7 +35,7 @@ get_seconds() {
 }
 
 get_notifications() {
-	get_tmux_option "$pomodoro_notifcations" "off"
+	get_tmux_option "$pomodoro_notifcations" "on"
 }
 
 get_sound() {
