@@ -74,9 +74,9 @@ send_notification() {
 		local message=$2
 		local sound=$(get_sound)
 		if [ "$sound" == "off" ]; then
-			osascript -e 'notify-send "'"$message"'" with title "'"$title"'"'
+			osascript -e 'notify-send "'"$title"'"' "'"$message"'"
 		else
-			osascript -e 'notify-send "'"$message"'" with title "'"$title"'" sound name "'"$sound"'"'
+			osascript -e 'notify-send "'"$title"'"' "'"$message"'"
 		fi
 	fi
 }
