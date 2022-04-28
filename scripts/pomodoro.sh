@@ -73,6 +73,9 @@ send_notification() {
 		local title=$1
 		local message=$2
 		local sound=$(get_sound)
+		echo "$title" 
+		echo "$message"
+
 		if [ "$sound" == "off" ]; then
 			notify-send "$title" "$message"
 		else
